@@ -70,11 +70,13 @@ class TreeNode {
 
 	private static void printNode(TreeNode N) {
 		if (N != null) {
-			System.out.print("(");
+			
 			printNode(N.left);
+			System.out.print("(");
 			System.out.print(N.data);
-			printNode(N.right);
 			System.out.print(")");
+			printNode(N.right);
+			
 		}
 	}
 	
@@ -87,8 +89,8 @@ class TreeNode {
 		int[] array = {1,2,3,4,5,6,7,8,9,10};
 
 		TreeNode asd = new TreeNode();
-		for(int i=0; i<10; i++) {
-			asd.insert(array[0]);
+		for(int i=0; i<3; i++) {
+			asd.insert(array[i]);
 		}
 		printBST();
 
