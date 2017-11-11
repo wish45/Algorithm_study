@@ -1,41 +1,4 @@
 package Coding_Interview;
-//
-//
-//class TreeNode{
-//	private int data;
-//	private TreeNode left,right;
-//	
-//	public TreeNode insertNode(TreeNode root, int x) {
-//		TreeNode pointNode = root;
-//		TreeNode newNode = new TreeNode();
-//
-//		newNode.data=x;
-//		newNode.left=null;
-//		newNode.right=null;
-//
-//		if(pointNode == null) return newNode;
-//		else if(newNode.data < pointNode.data){
-//			pointNode.left = insertNode(pointNode.left, x);
-//			return pointNode;
-//		}
-//		else if(newNode.data > pointNode.data){
-//			pointNode.right = insertNode(pointNode.right, x);
-//			return pointNode;
-//		}
-//		else return pointNode;
-//	}
-//	
-//	public void insert(int x){
-//		TreeNode root = new TreeNode();
-//		root = insertNode(root, x);
-//	}
-//
-//	public static void main(String[] args) {
-//		TreeNode root = new TreeNode();
-//		
-//	}
-//
-//}
 
 class TreeNode {
 	int data;
