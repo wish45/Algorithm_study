@@ -1,17 +1,17 @@
 package Coding_Interview;
 
-class TreeNode {
+class chap4_TreeNode_2 {
 	int data;
-	TreeNode left;
-	TreeNode right;
-	TreeNode root;
+	chap4_TreeNode_2 left;
+	chap4_TreeNode_2 right;
+	chap4_TreeNode_2 root;
 
-	private static TreeNode rootNode;
+	private static chap4_TreeNode_2 rootNode;
 
 	
-	private TreeNode insertKey(TreeNode root, int x) {
+	private chap4_TreeNode_2 insertKey(chap4_TreeNode_2 root, int x) {
 		if (root == null) {
-			TreeNode newNode = new TreeNode();
+			chap4_TreeNode_2 newNode = new chap4_TreeNode_2();
 			newNode.data = x;
 			return newNode;
 		} else if (x < root.data) {
@@ -31,7 +31,7 @@ class TreeNode {
 	}
 
 
-	private static void printNode(TreeNode N) {
+	private static void printNode(chap4_TreeNode_2 N) {
 		if (N != null) {
 			
 			printNode(N.left);
@@ -51,8 +51,8 @@ class TreeNode {
 	public static void main(String[] args) {
 		int[] array = {1,2,3,4,5,6,7,8,9,10};
 
-		TreeNode asd = new TreeNode();
-		for(int i=0; i<3; i++) {
+		chap4_TreeNode_2 asd = new chap4_TreeNode_2();
+		for(int i=0; i<10; i++) {
 			asd.insert(array[i]);
 		}
 		printBST();
